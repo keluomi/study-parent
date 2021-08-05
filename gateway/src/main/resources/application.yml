@@ -11,3 +11,13 @@ spring:
           uri: lb://eureka-order
           predicates:
             - Path=/order/*
+      discovery:
+        locator:
+          enabled: true
+    loadbalancer:
+#      如果要禁用springcloud自带的负载均衡器则设置false， 然后配置其他的负载均衡器，比如 ribbon
+      enabled: true
+# 配置Gateway日志等级，输出转发细节信息
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

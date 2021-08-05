@@ -27,6 +27,7 @@ public class OrderController {
     @GetMapping("doOrder")
     public Map doOrder(){
 
+        System.out.println(System.currentTimeMillis());
         ResponseEntity<HashMap> goods = restTemplate.getForEntity("http://eureka-goods/getGoods/1", HashMap.class);
         return goods.getBody();
     }
