@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+        - id: service_order
+          uri: lb://eureka-order
+          predicates:
+            - Path=/order/*

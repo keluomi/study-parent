@@ -7,34 +7,19 @@
         <artifactId>study-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.lion.order</groupId>
-    <artifactId>eureka-order</artifactId>
+    <groupId>com.lion.getway</groupId>
+    <artifactId>gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-order</name>
-    <description>eureka-order</description>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+    <name>gateway</name>
+    <description>gateway</description>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.lion.web</groupId>
-            <artifactId>module-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

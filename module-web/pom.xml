@@ -7,34 +7,27 @@
         <artifactId>study-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.lion.order</groupId>
-    <artifactId>eureka-order</artifactId>
+    <groupId>com.lion.web</groupId>
+    <artifactId>module-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-order</name>
-    <description>eureka-order</description>
+    <name>module-web</name>
+    <description>module-web</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.lion.web</groupId>
-            <artifactId>module-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
